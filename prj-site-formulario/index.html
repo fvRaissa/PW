@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Formulario de cadastro</title>
+        <meta charset="UTF-8">
+    </head>
+    <body  bgcolor="#D3D3D3">
+        <font face= "Berlin Sans FB" >
+        <h1>Cadastro do cliente</h1>
+
+        <form>
+            <label>Nome completo:</label>
+            <input type="text" size="50px" maxlength="100" id="txtNome" name="txtNome">
+            <br>
+            <label> Sexo: </label>
+            <input type="radio" id="rdSexo" name="rdSexo">Feminino 
+            <input type="radio" id="rdSexo" name="rdSexo">Masculinos
+            <br>
+            <label>CPF:</label>
+            <input type="text" size="20" maxlength="11" id="txtCpf" name="txtCpf">
+            <br>
+            <label>Data de nascimento</label >
+            <input type="date" id="txtDataNacimento" name="txtDataNacimento">
+            <br>
+            <label>E-mail</label>
+            <input type="email" size="30px" id="txtEmail" name="txtEmail">
+            <br>
+            <label>Tipo de telefone</label>
+            <select id="slTipoTlefone" name="slTipoTelefone">
+                <option volue="1">Celular</option>
+                <option volue="2">Residencial</option>
+                <option volue="3">Comercial</option>
+                <option volue="4">Recado</option>
+            </select>
+            <br>
+            <label>Numero do telefone</label>
+            <input type="text" size="20" id="txtNumTel" name="txtNumTel">
+            <br>
+            <label>Preferencia de categorias de produros</label>
+            <input type="checkbox" id="ckCalcados" name="ckCalcados"> Calçados
+            <input type="checkbox" id="ckRoupas" name="ckRoupas"> roupas
+            <input type="checkbox" id="ckAcessorios" name="ckAcessorios"> acessórios
+            <input type="checkbox" id="ckBolsas" name="ckBolsas"> Bolsas
+            <br>
+            <input type="submit" value="Cadastrar">
+        </form>
+    </font>
+    </body>
+</html>
