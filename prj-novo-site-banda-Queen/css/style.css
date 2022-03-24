@@ -1,0 +1,85 @@
+body{
+    color: #C0C0C0;
+    background: #000000;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:25px;
+}
+
+#img_logo{
+    width: 650px;
+    margin-left: 22.5%;
+    margin-right: 22.5%;
+}
+
+nav{
+    width: 100%;
+    height: 35px;
+    background: #778899;
+}
+
+ul{
+    list-style: none;
+}
+
+li a{
+    float:left;
+    width: 25%;
+    height: 35px;
+    text-align: center;
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    font-size: 30px;
+
+}
+
+li a:hover{
+    background: #3C4D5B;    
+}
+.corpo{
+    width: 980px;
+    margin:auto;
+    background-color: black;
+}
+
+h1{
+    font-family:'Queen Inline Grunge';
+    font-size:120px ;
+    color: #be8211;
+    line-height: 70px;
+    margin: 00px  20px  0px  20px;
+}
+p{
+    font-size:25SSpx;
+    line-height: 150%;
+   
+}
+
+#img_night-at-the-opera{
+    width: 350px;
+}
+
+#img_capaFilme{
+    width: 400;
+}
+
+#img_logo2{
+    width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ol{
+    list-style-type: decimal;
+}
+.musicas{
+    width: 100%;
+    text-align: left;
+    text-decoration: underline;
+    font-size: px;
+    color: blue;
+}
+.musicas:hover{
+    background: black;
+}
+
+
