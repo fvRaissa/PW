@@ -15,8 +15,9 @@
     box-sizing: border-box;
 }
   
-html{
+html body{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 
@@ -109,9 +110,10 @@ nav li{
     margin-left: 15px;
     margin-right: 15px;
     /* font-size: 2vw; */
-    font-size: 3.1vh;
+    font-size: 2.4vh;
     font-family: Poppins;
     /* background-color: #e04850; */
+    transition: all 0.5s ;
 }
 
 .nav-list li a:hover{
@@ -128,6 +130,7 @@ nav.ativo{
     top: 0;
     width: 100%;
     /* filter:blur(3px) */
+    
 }
 
 nav.ativo .nav-links a{
@@ -140,7 +143,9 @@ nav.ativo .nav-list{
 
 nav.ativo .nav-list li a:hover{ 
     text-decoration: none;
-    transition: color 500ms ease-out;
+    /* transition: color 500ms ease-in-out; */
+    /* transition: color 500ms ease-in; ; */
+    transform: scale(1.1);
 }
 
 .nav-list li.active a {
@@ -204,7 +209,7 @@ nav.ativo .nav-list li a:hover{
     overflow: hidden;
     transition: color 1s;
     margin-left: 10%;
-    margin-top: 28%;
+    margin-top: 26%;
     z-index: 0;
     font-size: 2.5vh;
     
@@ -235,7 +240,44 @@ nav.ativo .nav-list li a:hover{
     width:150%;
 }
 
+/* ELEMENTOS GRAFICOS */
+/* bolinha canto superior esquerdo */
+#elem-1{
+    position: absolute;
+    left: -4.7%;
+    width: 10%;
+    /* background-color: black; */
+}
+/* maisinhos */
+#elem-2{
+    position: absolute;
+    top:70%;
+    left:50%;
+    width: 5%;
+}
 
+#elem-3{
+    position: absolute;
+    top:14%;
+    left:92%;
+    width: 5%;
+}
+
+/* bolinha canto inferior direito */
+#elem-4{
+    position: absolute;
+    bottom:15%;
+    right:-4.6%;
+    width: 10%;
+}
+
+/* zigui zague */
+#elem-5{
+    position: absolute;
+    bottom:5%;
+    left:0%;
+    width: 18%;
+}
 
 #coracao{
     background-color: #DAF6E7;
