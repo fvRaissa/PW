@@ -1,0 +1,304 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Utility
+# Cards
+# Common
+# Form
+# Navigations
+# Animations
+# Mobile Nav
+# Search Popup
+# Page Header
+# Google Map
+# Client Carousel
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Common
+--------------------------------------------------------------*/
+
+/* Cards dos Membros */
+
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css');
+
+:root {
+  --brote-font: 'DM Sans', sans-serif;
+  --brote-reey-font: "reeyregular";
+  --brote-gray: #676767;
+  --brote-gray-rgb: 123, 125, 131;
+  --brote-white: #ffffff;
+  --brote-white-rgb: 255, 255, 255;
+  --brote-base: #300B78;
+  --brote-base-rgb: 18, 57, 172;
+  --brote-primary: #ffb400;
+  --brote-primary-rgb: 255, 180, 0;
+  
+}
+
+.row {
+  --bs-gutter-x: 30px;
+}
+
+a,
+a:hover,
+a:focus,
+a:visited {
+  text-decoration: none;
+}
+
+h3{
+  color: var(--brote-base);
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  
+}
+
+.area-membros {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*
+@media (min-width: 1200px) {
+  .area-membros {
+    max-width: 1090px;
+  }
+}
+*/
+
+/*--------------------------------------------------------------
+# Team One
+--------------------------------------------------------------*/
+.team-one {
+  position: relative;
+  display: block;
+  padding: 210px 0 90px;
+  background-color: #eef0f6;
+  margin-top: -90px;
+  z-index: 1;
+}
+
+.team-one__single {
+  position: relative;
+  display: block;
+  margin-bottom: 41px;
+  width: 90%;
+}
+
+.team-one__img {
+  position: relative;
+  display: block;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 17px;
+  overflow: hidden;
+}
+
+.team-one__img:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  width: 0%;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 17px;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  z-index: 1;
+}
+
+
+
+.team-one__single:hover .team-one__img:before {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  width: 100%;
+}
+
+.team-one__img img {
+  width: 100%;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 17px;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.team-one__single:hover .team-one__img img {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.team-one__social {
+  position: absolute;
+  right: 3%;
+  bottom: 60px;
+  background-color: var(--brote-primary);
+  text-align: center;
+  padding: 12px 7px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+  -webkit-transform-origin: bottom center;
+  transform-origin: bottom center;
+  z-index: 2;
+}
+
+.team-one__single:hover .team-one__social {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+  -webkit-transition-delay: 500ms;
+  transition-delay: 500ms;
+}
+
+.team-one__social li+li {
+  margin-top: 12px;
+}
+
+.team-one__social li a {
+  font-size: 16px;
+  color: var(--brote-white);
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.team-one__social li a:hover {
+  color: var(--brote-base);
+}
+
+.team-one__content {
+  position: relative;
+  display: block;
+  z-index: 2;
+}
+
+.team-one__title-box {
+  position: relative;
+  display: block;
+  background-color: white;
+  -webkit-box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.05);
+  padding-left: 8px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 34px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin-left: 10px;
+  margin-top: -60px;
+  z-index: 2;
+}
+
+.team-one__name {
+  font-size: 1.6vh;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.team-one__name a {
+  color: var(--brote-base);
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.team-one__name a:hover {
+  color: var(--brote-primary);
+}
+
+.team-one__social-two {
+  position: absolute;
+  right: 3%;
+  top: 0;
+  background-color: var(--brote-primary);
+  padding: 6px 8px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.fi{
+  font-size: 15px;
+}
+
+.team-one__social-two li a {
+  font-size: 17px;
+  color: var(--brote-white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.team-one__social-two li a:hover {
+  color: var(--brote-base);
+}
+
+.team-one__sub-title-box {
+  position: absolute;
+  display: inline-block;
+  background-color: var(--brote-base);
+  padding: 12px 20px;
+  bottom: -11px;
+  left: 0;
+  border-top-right-radius: 15px;
+  z-index: 2;
+}
+
+.team-one__sub-title-box:before {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  content: "";
+  border-top: 10px solid transparent;
+  border-right: 10px solid #0a2e99;
+  border-bottom: 0px solid transparent;
+}
+
+.team-one__sub-title-box:after {
+  position: absolute;
+  bottom: 0px;
+  right: -10px;
+  content: "";
+  border-top: 0px solid transparent;
+  border-left: 10px solid #0a2e99;
+  border-bottom: 11px solid transparent;
+}
+
+.team-one__sub-title {
+  font-size: 1.3vh;
+  color: var(--brote-white);
+  line-height: 12px;
+}
