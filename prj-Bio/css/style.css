@@ -6,7 +6,7 @@
 /* Links de Fontes */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
 *{
@@ -176,7 +176,7 @@ nav.ativo .nav-list li a:hover{
     margin-left: 10%;
     margin-top: 10%;
     /* background-color: aqua; */
-    width: 42vw;
+    width: 43vw;
     font-family: 'Raleway', sans-serif;
     font-weight:bolder;
     position: absolute;
@@ -280,21 +280,28 @@ nav.ativo .nav-list li a:hover{
 }
 
 #coracao{
-    background-color: #DAF6E7;
+    background-color: #f8f8f8;
 }
+.titulo2{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 5vh;
+    color: rgb(46, 46, 46);
+}
+
 #transplante{
-    background-color: #ffffff;
+    background-color: #f0fff7;
 }
-#lei-transplante{
-    background-color: #DAF6E7;
-}
+
+
 #quem-recebe{
-    background-color: #ffffff;
+    background-color: #f8f8f8;
 }
 
 #como-doar{
-    background-color: #DAF6E7;
+    background-color: #f0fff7;
 }
 #locais-doacao{
-    background-color: #ffffff;
+    background-color: #f8f8f8;
 }
